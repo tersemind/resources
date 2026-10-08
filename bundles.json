@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "release_tag": "infra-resources-2026-10-09",
+  "bundles": [
+    {
+      "category": "corpus",
+      "path": "dist/corpus-ab5947391ce6.tar.gz",
+      "release_asset": "corpus-ab5947391ce6.tar.gz",
+      "sha256": "ab5947391ce6b362712a4ecad4fb14eb8295587b936d5c0a1bf7067ae81c7f1f",
+      "size_bytes": 5757474,
+      "release_url": "https://github.com/tersemind/resources/releases/download/infra-resources-2026-10-09/corpus-ab5947391ce6.tar.gz",
+      "members": [
+        {
+          "path": "assets/corpus/msr-training-872a24b0aa82.utf8",
+          "archive_path": "msr-training-872a24b0aa82.utf8",
+          "sha256": "872a24b0aa827fe5334370c5d9bf090902a948cc103c4775a3f61285c052e6ee",
+          "size_bytes": 16891510
+        }
+      ]
+    },
+    {
+      "category": "dictionaries",
+      "path": "dist/dictionaries-3ebaa990eb35.tar.gz",
+      "release_asset": "dictionaries-3ebaa990eb35.tar.gz",
+      "sha256": "3ebaa990eb3517eba32d2eeb2c1c67212d41f08936e44b235da0601fa7715e4d",
+      "size_bytes": 6520187,
+      "release_url": "https://github.com/tersemind/resources/releases/download/infra-resources-2026-10-09/dictionaries-3ebaa990eb35.tar.gz",
+      "members": [
+        {
+          "path": "assets/dictionaries/count_1w.txt",
+          "archive_path": "count_1w.txt",
+          "sha256": "712cb0524381a5a9e16a72bbfde7f0d66645d4a1f8a03d8a2eb828e77f2e5ebc",
+          "size_bytes": 4956242
+        },
+        {
+          "path": "assets/dictionaries/jieba_big.txt",
+          "archive_path": "jieba_big.txt",
+          "sha256": "b16011275c42955ccd81fc1adecc93a59dbb7926af69d93fc95d4943d40f6aad",
+          "size_bytes": 8583143
+        },
+        {
+          "path": "assets/dictionaries/thuocl/THUOCL_IT.txt",
+          "archive_path": "thuocl/THUOCL_IT.txt",
+          "sha256": "e8cd42c9f5559735fa3bfb91515cbe051f991efd4a803038a1d5c0da85af3526",
+          "size_bytes": 308187
+        },
+        {
+          "path": "assets/dictionaries/thuocl/THUOCL_animal.txt",
+          "archive_path": "thuocl/THUOCL_animal.txt",
+          "sha256": "bcdc95a32fe713d4bc32957ae26174e3b464908e318e821c9abb295e90249145",
+          "size_bytes": 320553
+        },
+        {
+          "path": "assets/dictionaries/thuocl/THUOCL_caijing.txt",
+          "archive_path": "thuocl/THUOCL_caijing.txt",
+          "sha256": "68e63d2009e59c6f388eeaa789d19b6a681657de3e8e56cc3479b21cd8548542",
+          "size_bytes": 62296
+        },
+        {
+          "path": "assets/dictionaries/thuocl/THUOCL_car.txt",
+          "archive_path": "thuocl/THUOCL_car.txt",
+          "sha256": "58ffd756b89e8574852bc72c254276a1d7fa8821342eb3cbf3be73ca33ab921c",
+          "size_bytes": 32492
+        },
+        {
+          "path": "assets/dictionaries/thuocl/THUOCL_chengyu.txt",
+          "archive_path": "thuocl/THUOCL_chengyu.txt",
+          "sha256": "c339d5d6e37d4f8ecdcb82f2a02b7fdfc66796f0a5215155f2aff8a77e89a7eb",
+          "size_bytes": 166549
+        },
+        {
+          "path": "assets/dictionaries/thuocl/THUOCL_diming.txt",
+          "archive_path": "thuocl/THUOCL_diming.txt",
+          "sha256": "ca5574399da5750a2c36dc373f36e31a66ed1f8a4b21646df6ca44ec0b888d89",
+          "size_bytes": 640673
+        },
+        {
+          "path": "assets/dictionaries/thuocl/THUOCL_food.txt",
+          "archive_path": "thuocl/THUOCL_food.txt",
+          "sha256": "084caa96ad4f976720003e9420097ba7cb5ddbb17f9f8c8f76bc4b8e0cc777fd",
+          "size_bytes": 144749
+        },
+        {
+          "path": "assets/dictionaries/thuocl/THUOCL_law.txt",
+          "archive_path": "thuocl/THUOCL_law.txt",
+          "sha256": "8ef1a5f41052ac95dedde88b167c5031a43b3e0211bf128b6125736cc76ef7b2",
+          "size_bytes": 277745
+        },
+        {
+          "path": "assets/dictionaries/thuocl/THUOCL_lishimingren.txt",
+          "archive_path": "thuocl/THUOCL_lishimingren.txt",
+          "sha256": "d0e5094016e6db8c55d363dc022f48f7b1753cf6d07e216f63cf522ce8e53605",
+          "size_bytes": 163136
+        },
+        {
+          "path": "assets/dictionaries/thuocl/THUOCL_medical.txt",
+          "archive_path": "thuocl/THUOCL_medical.txt",
+          "sha256": "a01f39f1677af0b6a620bbc68bf293e8e436f06248b74adb625cd61d9ad7bbcd",
+          "size_bytes": 308805
+        },
+        {
+          "path": "assets/dictionaries/thuocl/THUOCL_poem.txt",
+          "archive_path": "thuocl/THUOCL_poem.txt",
+          "sha256": "f7045571f57114a3a70d2eaaeec8f991897d536be808f93161709f1289c8108c",
+          "size_bytes": 294695
+        }
+      ]
+    },
+    {
+      "category": "pdf",
+      "path": "dist/pdf-d8292e360209.tar.gz",
+      "release_asset": "pdf-d8292e360209.tar.gz",
+      "sha256": "d8292e360209cd66aa649c52913f1a8551c923806738a757fba3dade6e8b6b5c",
+      "size_bytes": 6491464,
+      "release_url": "https://github.com/tersemind/resources/releases/download/infra-resources-2026-10-09/pdf-d8292e360209.tar.gz",
+      "members": [
+        {
+          "path": "assets/pdf/adobe-agl-aglfn-4036a9ca80a62f64f9de4f7321a9a045ad0ecfd6.tar.gz",
+          "archive_path": "adobe-agl-aglfn-4036a9ca80a62f64f9de4f7321a9a045ad0ecfd6.tar.gz",
+          "sha256": "d6b7f57c5ef3061ce7a65b4001294efcefd27b787548155c48ebaa8569b3d909",
+          "size_bytes": 35406
+        },
+        {
+          "path": "assets/pdf/adobe-cmap-resources-f5cf3bca7fdfeaceb77aa82847e974f2306c20b4.tar.gz",
+          "archive_path": "adobe-cmap-resources-f5cf3bca7fdfeaceb77aa82847e974f2306c20b4.tar.gz",
+          "sha256": "664dd496e7eea4f41d401c2fc296b639ace93ef14484f53f62abbaaf3c2b39cf",
+          "size_bytes": 5539850
+        },
+        {
+          "path": "assets/pdf/adobe-core14-afms-8c892c3c4955.zip",
+          "archive_path": "adobe-core14-afms-8c892c3c4955.zip",
+          "sha256": "8c892c3c49553cfd2d2a27c4495b4bb12e2875115be7fd127ed3876df19d8654",
+          "size_bytes": 127150
+        },
+        {
+          "path": "assets/pdf/adobe-mapping-resources-pdf-2dd5e53fb74a01718b9dfd448a0d1cce6fff2aa5.tar.gz",
+          "archive_path": "adobe-mapping-resources-pdf-2dd5e53fb74a01718b9dfd448a0d1cce6fff2aa5.tar.gz",
+          "sha256": "bde04d598ec4f8c77c905b2a395aac5016a169758aeef2146413a430fca98e4a",
+          "size_bytes": 1554223
+        },
+        {
+          "path": "assets/pdf/fonttools-standardGlyphOrder-56b543826cb229cb945ea83a61daaca1a61237a1.py",
+          "archive_path": "fonttools-standardGlyphOrder-56b543826cb229cb945ea83a61daaca1a61237a1.py",
+          "sha256": "ec063f7d559db706788afe6e59dc8a01471b1108920edd65378b2ac7dc57c04d",
+          "size_bytes": 5785
+        }
+      ]
+    },
+    {
+      "category": "tokenizers",
+      "path": "dist/tokenizers-7c48be6322b6.tar.gz",
+      "release_asset": "tokenizers-7c48be6322b6.tar.gz",
+      "sha256": "7c48be6322b6c9d89db278ffca27e7848266fb4acd9f229c73a08be941c9af8d",
+      "size_bytes": 3983108,
+      "release_url": "https://github.com/tersemind/resources/releases/download/infra-resources-2026-10-09/tokenizers-7c48be6322b6.tar.gz",
+      "members": [
+        {
+          "path": "assets/tokenizers/deepseek-r1-tokenizer-ecb6f9fc3698.json",
+          "archive_path": "deepseek-r1-tokenizer-ecb6f9fc3698.json",
+          "sha256": "ecb6f9fc369894346f0511f4074ca75cee5cd5f3b06d02f1ba35fcd39f8e121d",
+          "size_bytes": 7847602
+        },
+        {
+          "path": "assets/tokenizers/qwen3-0.6b-tokenizer-aeb13307a71a.json",
+          "archive_path": "qwen3-0.6b-tokenizer-aeb13307a71a.json",
+          "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+          "size_bytes": 11422654
+        }
+      ]
+    }
+  ]
+}

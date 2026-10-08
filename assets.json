@@ -1,0 +1,344 @@
+{
+  "schema_version": 1,
+  "repository": "tersemind/resources",
+  "source": "tersemind/infra explicit MODULE.bazel HTTP dependencies and tokenizer/char/res/sources dictionary snapshot",
+  "snapshot_date": "2026-10-09",
+  "release_tag": "infra-resources-2026-10-09",
+  "assets": [
+    {
+      "name": "msr_training_corpus",
+      "rule": "http_file",
+      "path": "assets/corpus/msr-training-872a24b0aa82.utf8",
+      "purpose": "SIGHAN Bakeoff 2005 MSR gold segmentation corpus; builds the tw dictionary",
+      "consumer": "//tokenizer/tw/res",
+      "version": "SIGHAN-2005 / bytes pinned by SHA256",
+      "sha256": "872a24b0aa827fe5334370c5d9bf090902a948cc103c4775a3f61285c052e6ee",
+      "size_bytes": 16891510,
+      "upstream_urls": [
+        "https://raw.githubusercontent.com/yuikns/icwb2-data/master/training/msr_training.utf8"
+      ],
+      "strip_prefix": null,
+      "license": "Restricted corpus terms; competition-purpose use; other uses require provider permission",
+      "license_files": [
+        "licenses/msr-corpus-terms.md"
+      ],
+      "provenance": "Original download bytes recovered from the Bazel content-addressable cache and verified against infra MODULE.bazel",
+      "license_source_url": "https://raw.githubusercontent.com/yuikns/icwb2-data/master/README.md",
+      "license_sha256": {
+        "licenses/msr-corpus-terms.md": "3e6e2d58be3a574980c88cdfb105cb246db277b3d18ce7ad8a766973f72bc0c0"
+      },
+      "bundle": "corpus"
+    },
+    {
+      "name": "deepseek_r1_tokenizer",
+      "rule": "http_file",
+      "path": "assets/tokenizers/deepseek-r1-tokenizer-ecb6f9fc3698.json",
+      "purpose": "DeepSeek-R1 BPE vocabulary and tokenizer configuration",
+      "consumer": "//tokenizer/bpe/res/deepseek",
+      "version": "DeepSeek-R1 / upstream master snapshot identified by SHA256",
+      "sha256": "ecb6f9fc369894346f0511f4074ca75cee5cd5f3b06d02f1ba35fcd39f8e121d",
+      "size_bytes": 7847602,
+      "upstream_urls": [
+        "https://modelscope.cn/models/deepseek-ai/DeepSeek-R1/resolve/master/tokenizer.json"
+      ],
+      "strip_prefix": null,
+      "license": "MIT (model repository)",
+      "license_files": [
+        "licenses/deepseek-r1-LICENSE.txt"
+      ],
+      "provenance": "Original download bytes recovered from the Bazel content-addressable cache and verified against infra MODULE.bazel",
+      "license_source_url": "https://raw.githubusercontent.com/deepseek-ai/DeepSeek-R1/main/LICENSE",
+      "license_snapshot_date": "2026-10-09",
+      "license_sha256": {
+        "licenses/deepseek-r1-LICENSE.txt": "1c8f573e830ca9b3ebfeb7ace1823146e22b66f99ee223840e7637c9e745e1c7"
+      },
+      "bundle": "tokenizers"
+    },
+    {
+      "name": "qwen3_tokenizer",
+      "rule": "http_file",
+      "path": "assets/tokenizers/qwen3-0.6b-tokenizer-aeb13307a71a.json",
+      "purpose": "Qwen3-0.6B BPE vocabulary and tokenizer configuration",
+      "consumer": "//tokenizer/bpe/res/qwen",
+      "version": "Qwen3-0.6B / upstream master snapshot identified by SHA256",
+      "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+      "size_bytes": 11422654,
+      "upstream_urls": [
+        "https://modelscope.cn/models/Qwen/Qwen3-0.6B/resolve/master/tokenizer.json"
+      ],
+      "strip_prefix": null,
+      "license": "Apache-2.0 (model repository)",
+      "license_files": [
+        "licenses/qwen3-0.6b-LICENSE.txt"
+      ],
+      "provenance": "Original download bytes recovered from the Bazel content-addressable cache and verified against infra MODULE.bazel",
+      "license_source_url": "https://huggingface.co/Qwen/Qwen3-0.6B/resolve/main/LICENSE",
+      "license_snapshot_date": "2026-10-09",
+      "license_sha256": {
+        "licenses/qwen3-0.6b-LICENSE.txt": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+      },
+      "bundle": "tokenizers"
+    },
+    {
+      "name": "adobe_agl_aglfn",
+      "rule": "http_archive",
+      "path": "assets/pdf/adobe-agl-aglfn-4036a9ca80a62f64f9de4f7321a9a045ad0ecfd6.tar.gz",
+      "purpose": "Adobe Glyph List and ZapfDingbats glyph-name mappings",
+      "consumer": "//de/pdf_parser/res:tables",
+      "version": "4036a9ca80a62f64f9de4f7321a9a045ad0ecfd6",
+      "sha256": "d6b7f57c5ef3061ce7a65b4001294efcefd27b787548155c48ebaa8569b3d909",
+      "size_bytes": 35406,
+      "upstream_urls": [
+        "https://github.com/adobe-type-tools/agl-aglfn/archive/4036a9ca80a62f64f9de4f7321a9a045ad0ecfd6.tar.gz"
+      ],
+      "strip_prefix": "agl-aglfn-4036a9ca80a62f64f9de4f7321a9a045ad0ecfd6",
+      "license": "BSD-3-Clause",
+      "license_files": [
+        "licenses/adobe_agl_aglfn-LICENSE.md"
+      ],
+      "provenance": "Original download bytes recovered from the Bazel content-addressable cache and verified against infra MODULE.bazel",
+      "license_sha256": {
+        "licenses/adobe_agl_aglfn-LICENSE.md": "58147d341e7a34aa2196862395a34d2fd95716c41d5ed26efb59ab0e12f92089"
+      },
+      "bundle": "pdf"
+    },
+    {
+      "name": "adobe_cmap_resources",
+      "rule": "http_archive",
+      "path": "assets/pdf/adobe-cmap-resources-f5cf3bca7fdfeaceb77aa82847e974f2306c20b4.tar.gz",
+      "purpose": "Adobe predefined CJK CMaps",
+      "consumer": "//de/pdf_parser/res:tables",
+      "version": "f5cf3bca7fdfeaceb77aa82847e974f2306c20b4",
+      "sha256": "664dd496e7eea4f41d401c2fc296b639ace93ef14484f53f62abbaaf3c2b39cf",
+      "size_bytes": 5539850,
+      "upstream_urls": [
+        "https://github.com/adobe-type-tools/cmap-resources/archive/f5cf3bca7fdfeaceb77aa82847e974f2306c20b4.tar.gz"
+      ],
+      "strip_prefix": "cmap-resources-f5cf3bca7fdfeaceb77aa82847e974f2306c20b4",
+      "license": "BSD-3-Clause",
+      "license_files": [
+        "licenses/adobe_cmap_resources-LICENSE.md"
+      ],
+      "provenance": "Original download bytes recovered from the Bazel content-addressable cache and verified against infra MODULE.bazel",
+      "license_sha256": {
+        "licenses/adobe_cmap_resources-LICENSE.md": "742665db9c8e1bc72603c6d319ca3e90b83bd6d95202f0cd4ef11068a07a9c29"
+      },
+      "bundle": "pdf"
+    },
+    {
+      "name": "adobe_mapping_resources_pdf",
+      "rule": "http_archive",
+      "path": "assets/pdf/adobe-mapping-resources-pdf-2dd5e53fb74a01718b9dfd448a0d1cce6fff2aa5.tar.gz",
+      "purpose": "Adobe CID-to-Unicode mappings for PDF",
+      "consumer": "//de/pdf_parser/res:tables",
+      "version": "2dd5e53fb74a01718b9dfd448a0d1cce6fff2aa5",
+      "sha256": "bde04d598ec4f8c77c905b2a395aac5016a169758aeef2146413a430fca98e4a",
+      "size_bytes": 1554223,
+      "upstream_urls": [
+        "https://github.com/adobe-type-tools/mapping-resources-pdf/archive/2dd5e53fb74a01718b9dfd448a0d1cce6fff2aa5.tar.gz"
+      ],
+      "strip_prefix": "mapping-resources-pdf-2dd5e53fb74a01718b9dfd448a0d1cce6fff2aa5",
+      "license": "BSD-3-Clause",
+      "license_files": [
+        "licenses/adobe_mapping_resources_pdf-LICENSE.txt"
+      ],
+      "provenance": "Original download bytes recovered from the Bazel content-addressable cache and verified against infra MODULE.bazel",
+      "license_sha256": {
+        "licenses/adobe_mapping_resources_pdf-LICENSE.txt": "feb8b068a417681821823ef2e8995072aa111121fa11f8664038f78717f4497c"
+      },
+      "bundle": "pdf"
+    },
+    {
+      "name": "adobe_core14_afms",
+      "rule": "http_archive",
+      "path": "assets/pdf/adobe-core14-afms-8c892c3c4955.zip",
+      "purpose": "Adobe Core 14 font metrics",
+      "consumer": "//de/pdf_parser/res:tables",
+      "version": "Core14_AFMs / bytes pinned by SHA256",
+      "sha256": "8c892c3c49553cfd2d2a27c4495b4bb12e2875115be7fd127ed3876df19d8654",
+      "size_bytes": 127150,
+      "upstream_urls": [
+        "https://download.macromedia.com/pub/developer/opentype/tech-notes/Core14_AFMs.zip"
+      ],
+      "strip_prefix": null,
+      "license": "Adobe AFM redistribution notice",
+      "license_files": [
+        "licenses/adobe_core14_afms-MustRead.html"
+      ],
+      "provenance": "Original download bytes recovered from the Bazel content-addressable cache and verified against infra MODULE.bazel",
+      "license_sha256": {
+        "licenses/adobe_core14_afms-MustRead.html": "be71e055bb2551a6fc8b60dcf094bf40357858980abde86f76cc9a3c144d5403"
+      },
+      "bundle": "pdf"
+    },
+    {
+      "name": "fonttools_standard_glyph_order",
+      "rule": "http_file",
+      "path": "assets/pdf/fonttools-standardGlyphOrder-56b543826cb229cb945ea83a61daaca1a61237a1.py",
+      "purpose": "258 standard Macintosh glyph names for the TrueType post table",
+      "consumer": "//de/pdf_parser/res:tables",
+      "version": "56b543826cb229cb945ea83a61daaca1a61237a1",
+      "sha256": "ec063f7d559db706788afe6e59dc8a01471b1108920edd65378b2ac7dc57c04d",
+      "size_bytes": 5785,
+      "upstream_urls": [
+        "https://raw.githubusercontent.com/fonttools/fonttools/56b543826cb229cb945ea83a61daaca1a61237a1/Lib/fontTools/ttLib/standardGlyphOrder.py"
+      ],
+      "strip_prefix": null,
+      "license": "MIT",
+      "license_files": [
+        "licenses/fonttools-LICENSE.txt"
+      ],
+      "provenance": "Original download bytes recovered from the Bazel content-addressable cache and verified against infra MODULE.bazel",
+      "license_source_url": "https://raw.githubusercontent.com/fonttools/fonttools/56b543826cb229cb945ea83a61daaca1a61237a1/LICENSE",
+      "license_snapshot_date": "2026-10-09",
+      "license_sha256": {
+        "licenses/fonttools-LICENSE.txt": "6787208f83f659ccbc2223b2fde952ffa6f7e8aca62f1a8a2bf5bc51bb1b2383"
+      },
+      "bundle": "pdf"
+    },
+    {
+      "name": "char_dictionary_sources",
+      "rule": "category http_archive (planned after manual upload)",
+      "path": "assets/dictionaries",
+      "purpose": "jieba, Norvig count_1w and eleven THUOCL inputs for segmentation and POS dictionary generation",
+      "consumer": "//tokenizer/char/res:seg_main_dat and //tokenizer/pos/res:pos_jieba_dat",
+      "version": "infra working-tree snapshot 2026-10-09 / individual file hashes recorded",
+      "size_bytes": 16259265,
+      "upstream_urls": [
+        "https://raw.githubusercontent.com/fxsjy/jieba/master/extra_dict/dict.txt.big",
+        "https://raw.githubusercontent.com/thunlp/THUOCL/master/data/THUOCL_IT.txt",
+        "https://raw.githubusercontent.com/thunlp/THUOCL/master/data/THUOCL_animal.txt",
+        "https://raw.githubusercontent.com/thunlp/THUOCL/master/data/THUOCL_caijing.txt",
+        "https://raw.githubusercontent.com/thunlp/THUOCL/master/data/THUOCL_car.txt",
+        "https://raw.githubusercontent.com/thunlp/THUOCL/master/data/THUOCL_chengyu.txt",
+        "https://raw.githubusercontent.com/thunlp/THUOCL/master/data/THUOCL_diming.txt",
+        "https://raw.githubusercontent.com/thunlp/THUOCL/master/data/THUOCL_food.txt",
+        "https://raw.githubusercontent.com/thunlp/THUOCL/master/data/THUOCL_law.txt",
+        "https://raw.githubusercontent.com/thunlp/THUOCL/master/data/THUOCL_lishimingren.txt",
+        "https://raw.githubusercontent.com/thunlp/THUOCL/master/data/THUOCL_medical.txt",
+        "https://raw.githubusercontent.com/thunlp/THUOCL/master/data/THUOCL_poem.txt",
+        "https://www.norvig.com/ngrams/count_1w.txt"
+      ],
+      "license": "Mixed: jieba MIT, THUOCL terms, Norvig data notice",
+      "license_files": [
+        "licenses/jieba-LICENSE.txt",
+        "licenses/thuocl-terms.txt",
+        "licenses/norvig-count-1w-notice.md"
+      ],
+      "license_sha256": {
+        "licenses/jieba-LICENSE.txt": "18ba0984839f85853b29fadaf992f7dba8fd0ca0fbeae34de2b8735222dc7a37",
+        "licenses/thuocl-terms.txt": "2f3200be2549c08ebc3ed08498aa929fc02745277d1be32154e0863e7817c5b7",
+        "licenses/norvig-count-1w-notice.md": "b9164fd967964b87b2e1f5de633abd9081a04f98e5a70d6c721e5a0a66401308"
+      },
+      "provenance": "Original dictionary bytes copied from infra tokenizer/char/res/sources; archive created locally with deterministic tar metadata and gzip mtime=0",
+      "members": [
+        {
+          "path": "assets/dictionaries/count_1w.txt",
+          "archive_path": "count_1w.txt",
+          "sha256": "712cb0524381a5a9e16a72bbfde7f0d66645d4a1f8a03d8a2eb828e77f2e5ebc",
+          "size_bytes": 4956242,
+          "upstream_url": "https://www.norvig.com/ngrams/count_1w.txt",
+          "license": "See Norvig data provenance notice; data license not inferred from code license"
+        },
+        {
+          "path": "assets/dictionaries/jieba_big.txt",
+          "archive_path": "jieba_big.txt",
+          "sha256": "b16011275c42955ccd81fc1adecc93a59dbb7926af69d93fc95d4943d40f6aad",
+          "size_bytes": 8583143,
+          "upstream_url": "https://raw.githubusercontent.com/fxsjy/jieba/master/extra_dict/dict.txt.big",
+          "license": "MIT (jieba project)"
+        },
+        {
+          "path": "assets/dictionaries/thuocl/THUOCL_IT.txt",
+          "archive_path": "thuocl/THUOCL_IT.txt",
+          "sha256": "e8cd42c9f5559735fa3bfb91515cbe051f991efd4a803038a1d5c0da85af3526",
+          "size_bytes": 308187,
+          "upstream_url": "https://raw.githubusercontent.com/thunlp/THUOCL/master/data/THUOCL_IT.txt",
+          "license": "THUOCL upstream terms"
+        },
+        {
+          "path": "assets/dictionaries/thuocl/THUOCL_animal.txt",
+          "archive_path": "thuocl/THUOCL_animal.txt",
+          "sha256": "bcdc95a32fe713d4bc32957ae26174e3b464908e318e821c9abb295e90249145",
+          "size_bytes": 320553,
+          "upstream_url": "https://raw.githubusercontent.com/thunlp/THUOCL/master/data/THUOCL_animal.txt",
+          "license": "THUOCL upstream terms"
+        },
+        {
+          "path": "assets/dictionaries/thuocl/THUOCL_caijing.txt",
+          "archive_path": "thuocl/THUOCL_caijing.txt",
+          "sha256": "68e63d2009e59c6f388eeaa789d19b6a681657de3e8e56cc3479b21cd8548542",
+          "size_bytes": 62296,
+          "upstream_url": "https://raw.githubusercontent.com/thunlp/THUOCL/master/data/THUOCL_caijing.txt",
+          "license": "THUOCL upstream terms"
+        },
+        {
+          "path": "assets/dictionaries/thuocl/THUOCL_car.txt",
+          "archive_path": "thuocl/THUOCL_car.txt",
+          "sha256": "58ffd756b89e8574852bc72c254276a1d7fa8821342eb3cbf3be73ca33ab921c",
+          "size_bytes": 32492,
+          "upstream_url": "https://raw.githubusercontent.com/thunlp/THUOCL/master/data/THUOCL_car.txt",
+          "license": "THUOCL upstream terms"
+        },
+        {
+          "path": "assets/dictionaries/thuocl/THUOCL_chengyu.txt",
+          "archive_path": "thuocl/THUOCL_chengyu.txt",
+          "sha256": "c339d5d6e37d4f8ecdcb82f2a02b7fdfc66796f0a5215155f2aff8a77e89a7eb",
+          "size_bytes": 166549,
+          "upstream_url": "https://raw.githubusercontent.com/thunlp/THUOCL/master/data/THUOCL_chengyu.txt",
+          "license": "THUOCL upstream terms"
+        },
+        {
+          "path": "assets/dictionaries/thuocl/THUOCL_diming.txt",
+          "archive_path": "thuocl/THUOCL_diming.txt",
+          "sha256": "ca5574399da5750a2c36dc373f36e31a66ed1f8a4b21646df6ca44ec0b888d89",
+          "size_bytes": 640673,
+          "upstream_url": "https://raw.githubusercontent.com/thunlp/THUOCL/master/data/THUOCL_diming.txt",
+          "license": "THUOCL upstream terms"
+        },
+        {
+          "path": "assets/dictionaries/thuocl/THUOCL_food.txt",
+          "archive_path": "thuocl/THUOCL_food.txt",
+          "sha256": "084caa96ad4f976720003e9420097ba7cb5ddbb17f9f8c8f76bc4b8e0cc777fd",
+          "size_bytes": 144749,
+          "upstream_url": "https://raw.githubusercontent.com/thunlp/THUOCL/master/data/THUOCL_food.txt",
+          "license": "THUOCL upstream terms"
+        },
+        {
+          "path": "assets/dictionaries/thuocl/THUOCL_law.txt",
+          "archive_path": "thuocl/THUOCL_law.txt",
+          "sha256": "8ef1a5f41052ac95dedde88b167c5031a43b3e0211bf128b6125736cc76ef7b2",
+          "size_bytes": 277745,
+          "upstream_url": "https://raw.githubusercontent.com/thunlp/THUOCL/master/data/THUOCL_law.txt",
+          "license": "THUOCL upstream terms"
+        },
+        {
+          "path": "assets/dictionaries/thuocl/THUOCL_lishimingren.txt",
+          "archive_path": "thuocl/THUOCL_lishimingren.txt",
+          "sha256": "d0e5094016e6db8c55d363dc022f48f7b1753cf6d07e216f63cf522ce8e53605",
+          "size_bytes": 163136,
+          "upstream_url": "https://raw.githubusercontent.com/thunlp/THUOCL/master/data/THUOCL_lishimingren.txt",
+          "license": "THUOCL upstream terms"
+        },
+        {
+          "path": "assets/dictionaries/thuocl/THUOCL_medical.txt",
+          "archive_path": "thuocl/THUOCL_medical.txt",
+          "sha256": "a01f39f1677af0b6a620bbc68bf293e8e436f06248b74adb625cd61d9ad7bbcd",
+          "size_bytes": 308805,
+          "upstream_url": "https://raw.githubusercontent.com/thunlp/THUOCL/master/data/THUOCL_medical.txt",
+          "license": "THUOCL upstream terms"
+        },
+        {
+          "path": "assets/dictionaries/thuocl/THUOCL_poem.txt",
+          "archive_path": "thuocl/THUOCL_poem.txt",
+          "sha256": "f7045571f57114a3a70d2eaaeec8f991897d536be808f93161709f1289c8108c",
+          "size_bytes": 294695,
+          "upstream_url": "https://raw.githubusercontent.com/thunlp/THUOCL/master/data/THUOCL_poem.txt",
+          "license": "THUOCL upstream terms"
+        }
+      ],
+      "bundle": "dictionaries"
+    }
+  ],
+  "packaging": "One deterministic tar.gz per direct child directory of assets; entries are relative to that category without an extra wrapper directory. See bundles.json."
+}
