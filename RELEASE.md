@@ -1,9 +1,20 @@
-# Infra dependency resources — 2026-10-09
+# Infra resources — 2026-10-29
 
-本批按 `assets/` 的一级类型目录发布 4 个压缩包：corpus（1 文件）、tokenizers（2 文件）、pdf（5 文件）、dictionaries（13 文件），共 21 个原始文件。包内无额外顶层包装目录。
+| Category | Archive files | Package | Compressed size |
+| --- | ---: | --- | ---: |
+| `corpus` | 1 | [corpus-ab5947391ce6.tar.gz](dist/corpus-ab5947391ce6.tar.gz) | 5.491 MiB |
+| `dictionaries` | 13 | [dictionaries-3ebaa990eb35.tar.gz](dist/dictionaries-3ebaa990eb35.tar.gz) | 6.218 MiB |
+| `eval` | 42 | [eval-032c00ea45f6.tar.gz](dist/eval-032c00ea45f6.tar.gz) | 8.373 MiB |
+| `html` | 2594 | [html-4d221b255050.tar.gz](dist/html-4d221b255050.tar.gz) | 56.638 MiB |
+| `pdf` | 5 | [pdf-d8292e360209.tar.gz](dist/pdf-d8292e360209.tar.gz) | 6.191 MiB |
+| `tokenizers` | 2 | [tokenizers-7c48be6322b6.tar.gz](dist/tokenizers-7c48be6322b6.tar.gz) | 3.799 MiB |
 
-原有 8 个 HTTP 资源保持 MODULE 校验值，13 个词典保持 infra 源目录的原始字节。原始文件校验见 `SHA256SUMS`，类型包校验见 `RELEASE_SHA256SUMS`，完整包索引与内部文件列表见 `bundles.json`。
+6 categories, 2657 packaged source files. Release tag: `infra-resources-2026-10-09`.
 
-文件用途和统一打包/更新命令见 `README.md`，char/POS 构建迁移见 `DICTIONARIES.md`。上游许可及来源记录随附，MSR 条款见 `msr-corpus-terms.md`。资源依照各自原始条款使用。
+See `SHA256SUMS` for source-file checksums, `RELEASE_SHA256SUMS` for archive checksums, and `bundles.json` for complete inventories and download URLs. Category archives have no extra wrapper directory.
 
-本批未归档 bazel_dep、Cargo、npm 的其他依赖。类型包 URL 在手动发布后生效，infra 构建尚未切换。
+The HTML package contains 1296 fixed HTML inputs, their capture sidecars, an index, and an archive README. Sources reside in `assets/html/`; both that directory and `dist/` are excluded from Git. infra uses a URL and full-SHA256 lock, reuses its verified download cache, and does not recapture source sites.
+
+See `assets.json`, `licenses/`, and the category documentation for provenance and licensing. Packaging does not grant a uniform license to website content.
+
+These release notes are generated locally; consult the Release for actual attachment availability. Before publication, run `python3 pack.py --check`, then upload category archives and updated manifests. Retain previously published attachments.
