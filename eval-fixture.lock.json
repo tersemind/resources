@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "format": "eval-fixture-v1",
+  "audience": "public",
+  "workload_sha256": "ec9fde39294b5dfb6c3a5f07dc99dc81b9e99be5c74d30e8a96eeb6201d957f4",
+  "checks_sha256": "bd713d6df1455b6bf5e1bafd6791b93d4c9da0037dc25e741f594dfe71ec5073",
+  "samples": 20,
+  "bundle": {
+    "category": "eval",
+    "release_asset": "eval-032c00ea45f6.tar.gz",
+    "sha256": "032c00ea45f68602af167706660edea98273fd01d0cd0edac43b387f6de084bc",
+    "url": "https://github.com/tersemind/resources/releases/download/infra-resources-2026-10-09/eval-032c00ea45f6.tar.gz",
+    "size_bytes": 8780047
+  },
+  "source_workload_sha256": "e2c894c36aaa788af305e279632023987a65b46fd794ac27417d3754d07f8187",
+  "source_checks_sha256": "29f8973f3822afb46f69b71f998254559c494470378babc3841662258ee37c74",
+  "source_samples": 9867,
+  "selection": "all_annotated_pairs",
+  "cases": 10,
+  "excluded_unlabelled_samples": 9847
+}
