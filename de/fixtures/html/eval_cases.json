@@ -1,0 +1,66 @@
+[
+  {
+    "name": "mp 删块-遗漏",
+    "fixture": "mp-wechat-article golden",
+    "mutate": [
+      {
+        "op": "drop_blocks",
+        "match": "总票房"
+      }
+    ],
+    "expect": {
+      "findings_added": ["MissingContent"]
+    }
+  },
+  {
+    "name": "mp 合并-黏连",
+    "fixture": "mp-wechat-article golden",
+    "mutate": [
+      {
+        "op": "merge_blocks",
+        "match": "来源：界面新闻"
+      }
+    ],
+    "expect": {
+      "findings_added": ["GluedBoundary"]
+    }
+  },
+  {
+    "name": "mp title错配-浏览器标题佐证",
+    "fixture": "mp-wechat-article golden",
+    "mutate": [
+      {
+        "op": "set_field",
+        "field": "title",
+        "value": "完全不同的标题"
+      }
+    ],
+    "expect": {
+      "verdict": "Blocked",
+      "findings_added": ["FieldMismatch"]
+    }
+  },
+  {
+    "name": "csdn author错配-jsonld强证据",
+    "fixture": "csdn-article news",
+    "mutate": [
+      {
+        "op": "set_field",
+        "field": "author",
+        "value": "完全不同的作者"
+      }
+    ],
+    "expect": {
+      "verdict": "Blocked",
+      "findings_added": ["FieldMismatch"]
+    }
+  },
+  {
+    "name": "mp 未变异-正例",
+    "fixture": "mp-wechat-article golden",
+    "mutate": [],
+    "expect": {
+      "not_verdict": "Blocked"
+    }
+  }
+]
